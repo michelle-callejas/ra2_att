@@ -1,0 +1,155 @@
+.contenedor{
+    width: 100%;
+ 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+    padding: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    'head'
+    'nav'
+    'redes'
+    'titulo'
+    'foot'
+    ;
+
+
+}
+
+.section{
+    display: grid;
+    grid-area: head;
+    justify-content: space-between;
+    grid-template-rows: 450px;
+    grid-template-areas: 'img1 img2';
+}
+
+
+#img1{
+    grid-area: img1;
+   width:400px ;
+    height:200px;
+}
+#img2{
+    grid-area: img2;
+    width:300px ;
+    height:250px; 
+}
+
+  footer{
+    display: gt;
+    background-color: #81112a;
+    color: white;
+    text-align: center;
+    grid-area: foot;
+  }
+
+  .titulo{
+    color: #81112a;
+    grid-area: titulo;
+
+  }
+
+  .redes{
+    grid-column: 12;
+    grid-area: redes;
+    justify-content: end;
+    text-align: end;
+  }
+
+
+  #r1,#r2,#r3{
+    width:50px; 
+    height:50px;
+  }
+
+ 
+  header {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #77021a;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.menuLogo {
+    width: 25%;
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: white;
+
+  }
+
+  .cerrar-menu {
+      color: #ececec;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: grid;
+      flex-direction: row;
+      align-items: start;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #75001b;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+      height: 400px;
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .nav-list {
+      flex-direction: column;
+      align-items: start;
+  }
+
+  .nav-list li a {
+      color: #ecececec;
+  }}
