@@ -11,5 +11,8 @@
 
 ### Descripción del proyecto
 
+
 > El proyecto cuenta con 10 páginas de diseño de CSS grid y 10 páginas de diseños Flexbox
+>
+> 
 > El proyecto fue trabajado con tecnologías HTML, CSS y JavaScript
